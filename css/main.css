@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Crete+Round');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+/*font-family: 'Crete Round', serif;
+font-family: 'Ubuntu', sans-serif;*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0 8px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 130px;
+}
+
+.masthead {
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 200px;
+}
+
+.masthead p {
+    text-align: center;
+    color: white;
+    font-family: 'Crete Round', serif;
+    padding-top: 5rem;
+}
+
+button {
+    height: 50px;
+    background-color: black;
+    color: #83c348;
+    width: 100%;
+    font-family: 'Crete Round', serif;
+    font-weight: 600;
+    font-size: 1rem;
+    border: 0;
+    box-shadow: none;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    margin-top: 0.2rem;
+}
+
+button:hover {
+    background-color: #83c348;
+    transition-duration: 0.5s;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Crete Round', serif;
+    font-weight: 400;
+}
+
+p {
+    font-size: 0.618rem;
+    line-height: 1.4rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+hr {
+    margin-top: 1.5rem;
+    color: grey;
+}
+
+footer {
+    padding: 1rem 0;
+    text-align: center;
+    color: #83c348;
+    background: black;
+}
+
+.fa {
+    color: white;
+}
+
+footer p {
+    line-height: 1rem;
+}
+
+form input {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+#send {
+    background: #83c348;
+    color: white;
+}
+
+@media screen and (min-width: 35rem) and (max-width: 80rem) {
+    .wrapper {
+        margin: 0 25px;
+    }
+    button {
+        display: inline-block;
+        float: left;
+        width: 49.8%;
+    }
+    p {
+        font-size: 1rem;
+    }
+    figure {
+        width: 40%;
+        float: left;
+        margin-right: 1rem;
+    }
+    .left {
+        width: 30%;
+        float: left;
+    }
+    .right {
+        width: 69%;
+        margin-left: 1%;
+        float: right;
+    }
+    #message {
+        height: 110px;
+    }
+    #send {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 80rem) {
+    .wrapper {
+        margin: 0 200px;
+    }
+    p {
+        font-size: 1.618rem;
+        line-height: 1.6rem;
+    }
+    .logo {
+        width: 15%;
+        float: left;
+    }
+    button {
+        display: inline-block;
+        width: 20%;
+    }
+    navbar {
+        display: block;
+        padding-top: 2rem;
+    }
+    .masthead p {
+        text-align: left;
+        margin: 0 200px;
+    }
+    figure {
+        width: 40%;
+        float: left;
+        margin-right: 1rem;
+    }
+    .box:nth-child(2) {
+        width: 50%;
+        float: left;
+        padding-right: 10px;
+    }
+    .box:nth-child(3) {
+        width: 50%;
+        float: right;
+        padding-left: 10px;
+    }
+    
+    .box{
+        overflow: auto;
+    }
+    hr{
+        clear: both;
+    }
+    
+    footer{
+    text-align: left; 
+       padding: 20px 200px;
+        margin-top: 50px; 
+    }
+    
+   .left {
+        width: 30%;
+        float: left;
+    }
+    .right {
+        width: 69%;
+        margin-left: 1%;
+        float: right;
+    }
+    #message {
+        height: 110px;
+    }
+    #send {
+        width: 30%;
+    } 
+    form{
+        margin-bottom: 3rem;
+    }
+}
